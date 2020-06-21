@@ -24,7 +24,7 @@ class TitleFragment : Fragment() {
         binding.playButton.setOnClickListener {
             view?.findNavController()?.navigate(R.id.action_titleFragment_to_gameFragment)
         }
-
+git
         binding.scoresButton.setOnClickListener {
             view?.findNavController()?.navigate(R.id.action_titleFragment_to_scoreFragment)
         }
