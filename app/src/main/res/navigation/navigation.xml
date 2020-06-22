@@ -24,15 +24,30 @@
         android:id="@+id/gameFragment"
         android:name="cruz.dariel.com.simonsayskotlin.ui.fragments.GameFragment"
         android:label="fragment_game"
-        tools:layout="@layout/fragment_game" />
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_titleFragment"
+            app:destination="@id/titleFragment"
+            app:popUpTo="@id/titleFragment" />
+    </fragment>
     <fragment
         android:id="@+id/rulesFragment"
         android:name="cruz.dariel.com.simonsayskotlin.ui.fragments.RulesFragment"
         android:label="fragment_rules"
-        tools:layout="@layout/fragment_rules" />
+        tools:layout="@layout/fragment_rules" >
+        <action
+            android:id="@+id/action_rulesFragment_to_titleFragment"
+            app:destination="@id/titleFragment"
+            app:popUpTo="@id/titleFragment" />
+    </fragment>
     <fragment
         android:id="@+id/scoreFragment"
         android:name="cruz.dariel.com.simonsayskotlin.ui.fragments.ScoreFragment"
         android:label="fragment_score"
-        tools:layout="@layout/fragment_score" />
+        tools:layout="@layout/fragment_score" >
+        <action
+            android:id="@+id/action_scoreFragment_to_titleFragment"
+            app:destination="@id/titleFragment"
+            app:popUpTo="@id/titleFragment" />
+    </fragment>
 </navigation>
