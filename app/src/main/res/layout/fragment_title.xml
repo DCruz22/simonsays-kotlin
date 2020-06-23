@@ -14,6 +14,7 @@
         android:layout_height="@dimen/image_header_height"
         android:layout_marginStart="@dimen/horizontal_margin"
         android:layout_marginEnd="@dimen/horizontal_margin"
+        android:layout_marginTop="@dimen/vertical_margin"
         android:scaleType="fitCenter"
         android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toTopOf="@+id/playButton"
@@ -21,13 +22,16 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="@drawable/logo" />
 
     <Button
         android:id="@+id/playButton"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_size"
         android:layout_height="wrap_content"
         android:text="@string/play"
+        android:textSize="@dimen/button_text_size"
+        android:padding="@dimen/button_padding"
+        android:layout_marginTop="@dimen/vertical_margin"
         app:layout_constraintTop_toBottomOf="@id/titleImage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -35,9 +39,11 @@
 
     <Button
         android:id="@+id/scoresButton"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_size"
         android:layout_height="wrap_content"
         android:text="@string/scores"
+        android:padding="@dimen/button_padding"
+        android:textSize="@dimen/button_text_size"
         app:layout_constraintTop_toBottomOf="@id/playButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -45,9 +51,11 @@
 
     <Button
         android:id="@+id/rulesButton"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_size"
         android:layout_height="wrap_content"
         android:text="@string/rules"
+        android:textSize="@dimen/button_text_size"
+        android:padding="@dimen/button_padding"
         app:layout_constraintTop_toBottomOf="@id/scoresButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
