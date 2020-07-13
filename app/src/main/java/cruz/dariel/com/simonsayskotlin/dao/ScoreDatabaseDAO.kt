@@ -16,4 +16,7 @@ interface ScoreDatabaseDAO {
 
     @Query("SELECT * from score_table WHERE playerName = :name")
     fun search(name: String) : LiveData<List<Score>>
+
+    @Query("SELECT * FROM score_table ORDER BY id DESC LIMIT 1")
+    fun getLastScore(): Score?
 }

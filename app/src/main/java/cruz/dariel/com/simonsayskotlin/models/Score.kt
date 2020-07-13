@@ -6,4 +6,4 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "score_table")
 data class Score(
     @PrimaryKey(autoGenerate = true)
-    val id: Int, val playerName: String, val score: Int, val date: String)
+    val id: Long = 0L, val playerName: String = "", val score: Int = -1, val date: Long = System.currentTimeMillis())
