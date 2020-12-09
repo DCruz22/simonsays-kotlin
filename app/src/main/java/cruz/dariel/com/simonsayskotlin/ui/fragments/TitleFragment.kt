@@ -15,6 +15,8 @@ import cruz.dariel.com.simonsayskotlin.databinding.FragmentTitleBinding
 
 class TitleFragment : Fragment() {
 
+    private lateinit var listener: StringBuilder
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

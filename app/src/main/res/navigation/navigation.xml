@@ -47,7 +47,6 @@
         tools:layout="@layout/fragment_score" >
         <action
             android:id="@+id/action_scoreFragment_to_titleFragment"
-            app:destination="@id/titleFragment"
             app:popUpTo="@id/titleFragment" />
     </fragment>
 </navigation>
