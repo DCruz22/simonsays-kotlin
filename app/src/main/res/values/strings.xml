@@ -6,4 +6,11 @@
     <string name="play">Play</string>
     <string name="scores">Scores</string>
     <string name="rules">Rules</string>
+    <string name="start">Start</string>
+    <string name="press_start">Press \'Start\' to begin</string>
+    <string name="current_score">Current Score: %d</string>
+    <string name="high_score">High Score: %d</string>
+    <string name="simon_turn">It\'s Simons Turn</string>
+    <string name="your_turn">It\'s Your Turn</string>
+
 </resources>
